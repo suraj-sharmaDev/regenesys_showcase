@@ -1,0 +1,1204 @@
+h2.commonHeading {
+    color: #000;
+    font-weight: var(--font-bold);
+    position: relative;
+    font-size: 42px;
+    z-index: 8;
+    padding-left: 0px;
+    background-color: unset !important;
+}
+
+h2.commonHeading::before {
+    /* content: "";
+    width: 75px;
+    height: 78px;
+    position: absolute;
+    background-image: url("/images/heading_patch.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 12px;
+    left: 0px;
+    top: -24px;
+    z-index: -1; */
+}
+
+/* Program Banner Starts */
+
+.programBannerContainer {
+    /* background-image: url('/images/programs_banner.png'); */
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+.programBannerContainer h1 {
+    font-size: 44px;
+    color: #000;
+    display: block;
+    font-weight: var(--font-bold);
+    text-transform: uppercase;
+}
+
+
+
+.bannerOverlay {
+    /* background: rgba(0, 0, 0, 0.5); */
+    width: 100%;
+    min-height: auto;
+    max-height: auto;
+    padding-bottom: 20px;
+}
+
+
+.bannerDescp {
+    font-size: 18px;
+    color: #000;
+    display: block;
+
+}
+
+.bannerYellowInfo {
+    width: auto;
+    display: inline-block;
+    background-color: var(--yellow-color);
+    padding: 3px 4px;
+    margin: 14px 0px;
+}
+
+.bannerYellowInfo span {
+    font-weight: var(--font-bold);
+}
+
+.bannerInfoText {
+
+    color: #000;
+    /* color: var(--lighter-grey); */
+}
+
+.bannerBtnGrp {
+    margin-top: 20px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.bannerOverlay button {
+    margin-right: 20px;
+    color: #000;
+}
+
+.greenButton {
+    border: none;
+    background-color: transparent;
+    background-color: #1fa393;
+    border: 2px solid #1fa393;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 20px;
+    transition: all 0.6s ease;
+    font-size: 18px;
+}
+
+.greenButton:hover {
+    background-color: transparent;
+    color: #1fa393;
+}
+
+.transparentButton {
+    border: none;
+    background-color: transparent;
+    background-color: none;
+    border: 2px solid #1fa393;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 20px;
+    transition: all 0.6s ease;
+    font-size: 18px;
+}
+
+.transparentButton:hover {
+    background-color: #1fa393;
+    color: #fff;
+}
+
+.videoContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bannerVideoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.videoPlayButton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.videoPlayButton:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #1fa393;
+    border-radius: 50%;
+    animation: pulseBorder 1500ms ease-out infinite;
+}
+
+.videoPlayButton:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #1fa393;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+
+.videoPlayButton:hover:after {
+    background-color: darken(#f4cd00, 10%);
+}
+
+.videoPlayButton span {
+    z-index: 3;
+    border-left: 16px solid #fff;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+@keyframes pulseBorder {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.bannerVideoDiv img {
+    max-width: 80px;
+}
+
+.bannerVideoDiv span {
+
+    color: #000;
+}
+
+.bannerBottomDiv {
+    z-index: 9;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #fff;
+}
+
+.bannerPerksDiv {
+    height: 90px;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 2px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.perkDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.perkDiv span {
+    font-size: 18px;
+    color: var(--light-grey);
+    display: block;
+    width: 50%;
+    line-height: 20px;
+}
+
+
+.perkIcon {
+    width: 60px;
+    height: 60px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.perkIcon img {
+    width: 100%;
+}
+
+.verticalLine {
+    height: 70%;
+    width: 2px;
+    background-color: var(--light-blue);
+}
+
+
+
+/* Program Banner Ends */
+
+/* Who can apply for course starts */
+
+.placementContainer h2 {
+    background-color: var(--lighter-blue);
+}
+
+.placementContainer img {
+    cursor: pointer;
+}
+
+.placementIcon {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--light-blue);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.placementContainer span {
+
+    font-size: 18px;
+    margin-left: 5px;
+    color: #fff;
+}
+
+.reasonBanner img {
+    max-width: 315px;
+}
+
+/* Who can apply for course ends */
+
+/* Meet your mentors start */
+
+.programContainer {
+    position: relative;
+    /* margin-top: 30px; */
+}
+
+.carouselContainer {
+    background-color: var(--dark-blue);
+    position: relative;
+}
+
+.courseContainer {
+    width: 25vw !important;
+    height: 410px;
+    border-radius: 16px;
+    background-color: var(--lighter-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mentorImageDiv {
+    width: 100%;
+    height: auto;
+}
+
+.courseContainer img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 3px solid #f4cd00;
+}
+
+.mentorInfoBox {
+    padding: 20px;
+    text-align: center;
+}
+
+.mentorInfoBox h1 {
+
+    font-size: 22px;
+    color: var(--dark-blue);
+}
+
+.mentorInfoBox h2 {
+
+    font-size: 15px;
+    color: #000;
+}
+
+.mentorInfoBox span {
+
+    font-size: 14px;
+    color: var(--light-grey);
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: justify;
+}
+
+/* Meet your mentors Ends */
+
+/* Admission Process Starts  */
+.admissioninfo {
+
+    font-size: 16px;
+    margin-left: 5px;
+    color: var(--light-grey);
+}
+
+.admissionCardContainer {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.admissionCard {
+    background-color: var(--white-color);
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 4% 1% 4%;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.admissionCard img {
+    width: 50%;
+    max-width: 90px;
+}
+
+.admissionCard h4 {
+
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.admissionCard h5 {
+
+    font-size: 15px;
+    margin-top: 0px;
+    color: var(--light-grey);
+}
+
+.arrowViewContainer {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowView {
+    background-color: var(--white-color);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.arrowView img {
+    width: 50%;
+}
+
+
+
+/* Admission Process Ends  */
+
+/* Benefits Start */
+
+.benefitContainer {
+    background-color: var(--white-color);
+    padding: 3% 0%;
+}
+
+.benefitContainer button {
+    border: none;
+    background-color: var(--lighter-blue);
+    padding: 8px;
+
+    font-size: 18px;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.benefitContainer .buttonActive {
+    border-bottom: 3px solid var(--dark-blue);
+}
+
+.benefitsPara {
+    color: #7d7f7f !important;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 16px !important;
+}
+
+/* Benefits End */
+/* CSS from codesancbox editor Ravi starts */
+
+
+/*Reasons to join Start */
+.reasonsToJoinP {
+    position: relative;
+    margin-bottom: 60px;
+
+    background: #e8efef;
+    color: #7d7f7f;
+    font-size: 16px;
+}
+
+.displayList {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.displayList img {
+    margin-right: 20px;
+    max-width: 80px;
+    position: relative;
+    border-radius: 50%;
+    padding: 0px;
+    line-height: initial;
+}
+
+.displayList span {
+    font-size: 18px;
+}
+
+.reasonsBanner {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/*Reasons to join End */
+
+/*dream job start */
+.dreamJob {
+    margin-top: 50px;
+
+    background: #e8efef;
+    color: #7d7f7f;
+    font-size: 16px;
+}
+
+.dreamJob p {
+    margin-top: 20px;
+}
+
+.placementStats {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 2px solid #d3e5e4;
+}
+
+.placementStats:last-of-type {
+    border: none;
+}
+
+.placementStats h4 {
+    color: #000;
+
+    font-size: 26px;
+}
+
+.placementStats strong {
+    display: block;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.placementStats span {
+    display: block;
+    color: #1fa393;
+    font-size: 28px;
+}
+
+.topCompany {
+    padding: 10px 5%;
+    padding-left: 14%;
+}
+
+.topCompany h4 {
+    color: #000;
+
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.topCompany img {
+    max-width: 120px;
+    width: 100%;
+}
+
+/*dream job end */
+
+/* Tools Covered start  */
+.toolsCovered {
+    /* margin-top: 40px; */
+    padding-top: 40px;
+    background-color: white;
+}
+
+.toolsCovered h2 {
+    margin-bottom: 40px;
+    font-weight: var(--font-bold);
+}
+
+.toolsCovered img {
+    /* background-color: #fff; */
+    padding: 10px;
+    max-width: 120px;
+}
+
+/* Tools Covered End  */
+
+/* Get certified start */
+
+.getCertified {
+    margin-top: 40px;
+
+    color: #7d7f7f;
+    font-size: 16px;
+}
+
+.bgWhite {
+    background-color: #fff;
+    padding: 40px 0;
+    margin-top: 30px;
+}
+
+.certificateContent {
+    margin-bottom: 30px;
+    padding-right: 6%;
+}
+
+.certificateContent strong {
+    display: block;
+    font-size: 20px;
+}
+
+/* Get certified End */
+
+.courseCurriculum {
+    padding-top: 40px;
+}
+
+.courseCurriculum h2 {
+    padding-bottom: 0px;
+}
+
+/* Accordion Start   */
+
+.sectionCenter {
+    max-width: var(--fixed-width);
+}
+
+.question {
+    background: var(--clr-white);
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+    padding: 1.5rem;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+    background: #e8efef;
+    color: #7d7f7f;
+    font-size: 16px;
+    /* padding-right: 80px; */
+
+}
+
+.questionTitle {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+.questionTitle p {
+    margin-bottom: 0;
+    letter-spacing: var(--spacing);
+    color: var(--clr-grey-1);
+    padding-bottom: 20px;
+}
+
+.questionBtn {
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: var(--clr-gold);
+    transition: var(--transition);
+    background-color: #c7e0df;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -10px;
+}
+
+.questionBtn img {
+    max-width: 22px;
+}
+
+.questionText {
+    padding: 1rem 0 1.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.questionText p {
+    margin-bottom: 0;
+}
+
+/* hide text */
+.questions {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.questionText {
+    display: none;
+}
+
+.showText .questionText {
+    display: block;
+}
+
+.minusIcon {
+    display: none;
+}
+
+.showText .minusIcon {
+    display: inline;
+}
+
+.showText .plusIcon {
+    display: none;
+}
+
+.bgGreen {
+    background-color: #1fa393;
+}
+
+.downArrowIconFaq {
+    transform: rotate(180deg);
+}
+
+/* Accordion End */
+
+/* Course Fees Start */
+.courseFees {
+    margin-top: 40px;
+}
+
+.feesGreenGb {
+    background-color: #1fa393;
+    margin-top: 30px;
+}
+
+.borderRright {
+    border-right: 2px solid #d3e5e4;
+    padding-right: 0px;
+}
+
+.courseFeeLeft {
+    padding-top: 20px;
+    border-bottom: 2px solid #d3e5e4;
+}
+
+.courseFeeLeft p {
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.courseFeeLeft span {
+    color: #fff;
+    font-size: 26px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.borderLeft {
+    padding-left: 0px;
+}
+
+.courseFeeRight {
+    padding-top: 6px;
+    border-bottom: 2px solid #d3e5e4;
+    padding-left: 20px;
+}
+
+.borderLeft .courseFeeRight {
+    padding-left: 20px;
+}
+
+
+.courseFeeRight p {
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.courseFeeRight span {
+    color: #fff;
+    font-size: 26px;
+}
+
+.financePartner {
+    display: flex;
+}
+
+.financePartner img {
+    width: 190px;
+    height: 25px;
+    margin-left: 20px;
+    margin-top: 7px;
+}
+
+.middleHeight {
+    min-height: 120px;
+}
+
+.courseFeeLeft:last-of-type {
+    border: none;
+    padding-bottom: 0;
+    padding-top: 10px;
+}
+
+.courseFeeRight:last-of-type {
+    border: none;
+}
+
+.buttonOrange {
+    border: none;
+    background-color: transparent;
+    background-color: #f4cd00;
+    border: 2px solid #f4cd00;
+    color: #000;
+    border-radius: 20px;
+    padding: 5px 30px;
+    transition: all 0.6s ease;
+    font-size: 22px;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.buttonOrange:hover {
+    background-color: transparent;
+    color: #f4cd00;
+}
+
+/* Course fees end */
+
+/* Student Review Start */
+
+.studentsReview {
+    margin-top: 40px;
+    position: relative;
+}
+
+.studentsReview h2 {
+    margin-bottom: 30px;
+}
+
+.reviewContainer {
+    width: 25vw !important;
+    height: auto;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoDescription {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e1eae8;
+    padding: 20px 10px;
+    align-items: center;
+    border-bottom: 4px solid #1fa393;
+}
+
+.videoPreview iframe {
+    border-radius: 5px 5px 0 0;
+}
+
+.videoDescription strong {
+    color: #000;
+}
+
+.videoDescription img {
+    max-width: 30px;
+    border-radius: 5px;
+}
+
+.reviewBox {
+    margin-bottom: 20px;
+}
+
+/* Student Review End */
+
+.faq {
+    margin-top: 40px;
+}
+
+.benefits {
+    margin-top: 40px;
+}
+
+.benefits h2 {
+    margin-bottom: 30px;
+}
+
+.tabTextCenter {
+    display: flex;
+    align-items: center;
+}
+
+.benefitdList ul {
+    padding-left: 0px;
+}
+
+.benefitdList ul li {
+    margin: 20px 0;
+    position: relative;
+    list-style: none;
+    padding-left: 40px;
+    color: #7d7f7f;
+}
+
+.benefitdList ul li::before {
+    content: "";
+    width: 55px;
+    position: absolute;
+    background-image: url("/images/bullet_check.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 12px;
+    left: -15px;
+    top: 0px;
+}
+
+.benefitsWhiteBg {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.reviewBox {
+    margin-right: 15px;
+}
+
+.admissionFlex {
+    display: flex;
+}
+
+.sliderSpace {
+    margin: 0 10px;
+}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {
+    .bannerOverlay {
+        text-align: center;
+    }
+
+    .programBannerContainer h1 {
+        font-size: 30px;
+    }
+
+    .bannerDescp {
+        font-size: 15px;
+    }
+
+    .bannerBtnGrp {
+        display: block;
+    }
+
+    .bannerBtnGrp button {
+        margin-bottom: 10px;
+
+    }
+
+    .videoContainer {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .bannerVideoDiv img {
+        max-width: 65px;
+    }
+
+    .bannerBottomDiv {
+        position: relative;
+        height: auto;
+        display: block;
+    }
+
+    .bannerPerksDiv {
+        height: auto;
+        width: 95%;
+        background-color: white;
+        border-radius: 10px;
+        display: block;
+        flex-direction: row;
+        padding: 10px 2px;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding: 10px;
+        max-width: 400px;
+    }
+
+    .perkDiv {
+        justify-content: left;
+    }
+
+    .verticalLine {
+        height: 1px;
+        width: 100%;
+        background-color: var(--light-blue);
+        margin: 5px;
+    }
+
+    .commonHeading {
+        font-size: 30px !important;
+    }
+
+    .commonHeading::before {
+        content: "";
+        width: 65px !important;
+        height: 55px !important;
+        position: absolute;
+        background-image: url(/images/heading_patch.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        padding: 12px;
+        left: 0px !important;
+        top: -18px !important;
+        z-index: -1;
+        display: none;
+    }
+
+    .reasonsBanner {
+        max-width: 300px;
+    }
+
+    .displayList img {
+        max-width: 60px;
+    }
+
+    .displayList span {
+        font-size: 16px;
+    }
+
+    .reasonBanner img {
+        max-width: 250px;
+        margin: 0 auto;
+        display: table;
+    }
+
+    .footerBottom {
+        border-top: 2px solid #F4CD00;
+    }
+
+    .placementContainer span {
+        font-size: 15px;
+    }
+
+    .placementIcon {
+        padding: 8px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .placementStats h4 {
+        font-size: 22px;
+    }
+
+    .placementStats strong {
+        font-size: 18px;
+    }
+
+    .placementStats span {
+        font-size: 22px;
+    }
+
+    .topCompany {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+
+    .courseContainer {
+        width: 100% !important;
+    }
+
+    .carouselContainer {
+        padding-left: 0px;
+    }
+
+    .bgWhite {
+        padding: 20px 0;
+    }
+
+    .drCertificate {
+        margin-top: 30px;
+    }
+
+    .reviewContainer {
+        width: 100% !important;
+    }
+
+    .feesGreenGb {
+        width: 100% !important;
+    }
+
+    .carouselControlLeft {
+        left: 0px;
+    }
+
+    .carouselControlRight {
+        right: 0;
+    }
+
+    .admissionCardContainer {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .arrowViewContainer {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .benefitContainer button {
+        font-size: 16px;
+        width: 250px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .bannerOverlay {
+        padding-bottom: 0px;
+    }
+
+    .feesGreenGb {
+        padding-bottom: 30px;
+    }
+
+    .middleHeight {
+        min-height: auto;
+    }
+
+    .courseFeeLeft span {
+        font-size: 22px;
+    }
+
+    .borderLeft {
+        padding-left: 15px;
+    }
+
+    .courseFeeRight {
+        padding-left: 0px !important;
+    }
+
+    .buttonOrange {
+        font-size: 18px;
+    }
+
+    .courseFeeRight span {
+        font-size: 22px;
+        line-height: 22px;
+
+    }
+
+    .financePartner {
+        margin-top: 20px;
+    }
+
+    .admissionFlex {
+        display: block;
+    }
+
+
+}
+
+@media (max-width: 767.98px) {
+    .bannerBottomDiv {
+        bottom: 20px;
+    }
+
+    .middleHeight {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .benefitContainer button {
+        font-size: 14px;
+        width: 100%;
+        margin-right: 1%;
+        margin-bottom: 10px;
+        max-width: 48%;
+        margin-left: 1%;
+    }
+
+    .questionTitle p {
+        font-size: 15px;
+    }
+
+    .questionBtn {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+
+
+
+/* CSS from codesancbox editor Ravi ends */

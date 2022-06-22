@@ -1,0 +1,38 @@
+.globalSearch input {
+    border: 1px solid #cacaca;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.globalSearch form {
+    position: relative;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.searchInput {
+    width: 100%;
+}
+
+.globalSearch button {
+    position: absolute;
+    left: auto;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background-color: transparent;
+    color: #1fa393;
+}
+
+.globalSearch button i {
+    font-size: 22px;
+}
+
+.globalSearch span {
+    padding-bottom: 10px;
+    display: block;
+}
+
+.globalSearch a {
+    color: black;
+}

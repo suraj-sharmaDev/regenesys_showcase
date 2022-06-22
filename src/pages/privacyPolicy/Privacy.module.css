@@ -1,0 +1,43 @@
+.pageTopSpace {
+    margin-top: 40px;
+}
+
+.termsConditionGrid {
+    margin-top: 20px;
+}
+
+.termsConditionGrid ul {
+    padding-left: 0px;
+}
+
+.termsConditionGrid h5 {}
+
+.termsConditionGrid a {
+    color: #1fa393;
+}
+
+.termsConditionGrid ul li {
+    padding-left: 40px;
+    list-style: none;
+    position: relative;
+    margin: 15px 0;
+    color: #7d7f7f;
+}
+
+.termsConditionGrid ul li::before {
+    content: "";
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    background-image: url(/images/edforall-list-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0;
+    left: -4px;
+    top: 1px;
+}
+
+.termsConditionGrid a {
+    color: #1fa393;
+}

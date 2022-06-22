@@ -1,0 +1,160 @@
+.loginDetails {
+
+    color: #7d7f7f;
+}
+
+.loginLeft {
+    padding: 20px 0;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.loginLeft h5 {
+    color: #000;
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-align: center;
+
+}
+
+.loginLeft .greenButton {
+    width: 100%;
+    border-radius: 0px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.greenButton {
+    border: none;
+    background-color: transparent;
+    background-color: #1fa393;
+    border: 2px solid #1fa393;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 20px;
+    transition: all 0.6s ease;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.greenButton:hover {
+    background-color: transparent;
+    color: #1fa393;
+}
+
+.rememberCheck label {
+    font-size: 13px;
+}
+
+.forgotPass span {
+    color: #1fa393;
+    font-size: 13px;
+}
+
+.loginOr {
+    font-size: 14px;
+}
+
+.form-check-input {
+    margin-top: 0.45rem;
+}
+
+.LoginWithSocial {}
+
+.socialLogin {
+    width: 48%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.socialLogin:nth-child(1) {
+    margin-right: 10px;
+}
+
+.socialLogin:nth-child(3) {
+    margin-right: 10px;
+}
+
+.LoginWithSocial img {
+    max-width: 11px;
+    margin-right: 5px;
+}
+
+.LoginWithSocial span {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 2px;
+}
+
+.google {
+    background-color: #dd4b39;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.facebook {
+    background-color: #3b5999;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.facebook {
+    background-color: #3b5999;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.linked {
+    background-color: #0077b5;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.apple {
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.signUpLink {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.signUpLink a {
+    color: #1fa393;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+@media (max-width: 767.98px) {
+    .loginLeft .greenButton {
+        margin-top: 10px;
+    }
+
+    .socialLogin:nth-child(1) {
+        margin-right: 5px;
+    }
+
+    .socialLogin:nth-child(3) {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .greenButton {
+        margin: 0 auto;
+        display: table;
+        font-size: 16px;
+    }
+}
+
+.socialLogin.fullwidth {
+    width: 100%;
+}

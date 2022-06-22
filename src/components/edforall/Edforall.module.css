@@ -1,0 +1,108 @@
+.bannerContainer {
+    width: 100%;
+}
+
+.bannerEdForAllPatch {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0;
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    margin-top: -50px;
+}
+
+.patchDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.patchDiv img {
+    max-width: 50px;
+}
+
+.patchText {
+    padding: 10px;
+    padding-top: 25px;
+}
+
+.edForAllPara {
+    margin-top: 40px;
+}
+
+.edForAllPara h4 {
+    color: #1FA393;
+    margin-top: 15px;
+    display: block;
+    font-size: 22px;
+}
+
+.edForAllPara p {
+    text-align: justify;
+    color: #7d7f7f;
+}
+
+.subHeading {
+    color: #1fa393;
+    margin-top: 20px;
+}
+
+.degreeCourses ul {
+    padding-left: 0px;
+}
+
+.degreeCourses ul li {
+    padding-left: 40px;
+    list-style: none;
+    position: relative;
+    margin: 15px 0;
+    color: #7d7f7f;
+}
+
+.degreeCourses ul li::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-image: url(/images/edforall-list-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0;
+    left: -4px;
+    top: 1px;
+}
+
+.greenButton {
+    border: none;
+    background-color: transparent;
+    background-color: #1fa393;
+    border: 2px solid #1fa393;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 20px;
+    transition: all 0.6s ease;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.greenButton:hover {
+    background-color: transparent;
+    color: #1fa393;
+}
+
+.studentReviewBg {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.speakToConsultantRow {
+    margin-top: 40px;
+}
+
+.speakToConsultant {
+    background-color: #1FA393;
+    padding: 0px;
+    margin-top: 30px;
+}

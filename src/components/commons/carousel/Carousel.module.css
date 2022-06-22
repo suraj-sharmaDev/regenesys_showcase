@@ -1,0 +1,41 @@
+.carouselControl {
+  border: none;
+  background-color: var(--light-blue);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.carouselControl img {
+  width: 20px;
+  height: 20px;
+}
+
+.carouselControlLeft {
+  position: absolute;
+  left: 5%;
+  z-index: 9;
+  top: 50%;
+}
+
+.carouselControlRight {
+  position: absolute;
+  right: 5%;
+  z-index: 9;
+  top: 50%;
+}
+
+.slick-slide {
+  text-align: center !important;
+}
+
+@media (max-width: 767.98px) {
+  .carouselControl {
+    height: 35px;
+    width: 35px;
+  }
+}

@@ -1,0 +1,261 @@
+.greenButton {
+    border: none;
+    background-color: transparent;
+    background-color: #1fa393;
+    border: 2px solid #1fa393;
+    color: #fff !important;
+    border-radius: 20px;
+    padding: 5px 20px;
+    transition: all 0.6s ease;
+    font-size: 18px;
+    margin-top: 20px;
+    min-width: 160px;
+}
+
+.greenButton:hover {
+    background-color: transparent;
+    color: #1fa393 !important;
+}
+
+/* Program Banner Start  */
+
+.programBannerContainer {
+    /* background-image: url('/images/programs_banner.png'); */
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+.programBannerContainer h1 {
+    font-size: 44px;
+    color: #000;
+    display: block;
+    font-weight: var(--font-bold);
+    text-transform: uppercase;
+}
+
+
+
+.bannerOverlay {
+    /* background: rgba(0, 0, 0, 0.5); */
+    width: 100%;
+    min-height: auto;
+    max-height: auto;
+    padding-bottom: 0px;
+}
+
+
+.bannerDescp {
+    font-size: 18px;
+    color: #000;
+    display: block;
+
+}
+
+.bannerYellowInfo {
+    width: auto;
+    display: inline-block;
+    background-color: var(--yellow-color);
+    padding: 3px 4px;
+    margin: 14px 0px;
+}
+
+.bannerYellowInfo span {
+    font-weight: var(--font-bold);
+}
+
+.bannerInfoText {
+
+    color: #000;
+    /* color: var(--lighter-grey); */
+}
+
+.bannerBtnGrp {
+    margin-top: 20px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.bannerOverlay button {
+    margin-right: 20px;
+    color: #000;
+}
+
+.greenButton {
+    border: none;
+    background-color: transparent;
+    background-color: #1fa393;
+    border: 2px solid #1fa393;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 20px;
+    transition: all 0.6s ease;
+    font-size: 18px;
+}
+
+.greenButton:hover {
+    background-color: transparent;
+    color: #1fa393;
+}
+
+.transparentButton {
+    border: none;
+    background-color: transparent;
+    background-color: none;
+    border: 2px solid #1fa393;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 20px;
+    transition: all 0.6s ease;
+    font-size: 18px;
+}
+
+.transparentButton:hover {
+    background-color: #1fa393;
+    color: #fff;
+}
+
+.videoContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bannerVideoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.videoPlayButton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.videoPlayButton:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #1fa393;
+    border-radius: 50%;
+    animation: pulseBorder 1500ms ease-out infinite;
+}
+
+.videoPlayButton:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #1fa393;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+
+.videoPlayButton:hover:after {
+    background-color: darken(#f4cd00, 10%);
+}
+
+.videoPlayButton span {
+    z-index: 3;
+    border-left: 16px solid #fff;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+@keyframes pulseBorder {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.bannerVideoDiv img {
+    max-width: 80px;
+}
+
+.bannerVideoDiv span {
+
+    color: #000;
+}
+
+.bannerBottomDiv {
+    z-index: 9;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #fff;
+}
+
+.bannerPerksDiv {
+    height: 90px;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 2px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.perkDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.perkDiv span {
+    font-size: 18px;
+    color: var(--light-grey);
+    display: block;
+    width: 50%;
+    line-height: 20px;
+}
+
+
+.perkIcon {
+    width: 60px;
+    height: 60px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.perkIcon img {
+    width: 100%;
+}
+
+.verticalLine {
+    height: 70%;
+    width: 2px;
+    background-color: var(--light-blue);
+}
+
+
+/* Program Banner End  */

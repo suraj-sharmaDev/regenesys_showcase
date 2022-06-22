@@ -1,0 +1,20 @@
+.modalFtrBtnDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalSubmitBtn {
+    background-color: var(--dark-blue);
+    border: none;
+    color: var(--white-color);
+    border-radius: 20px;
+    padding: 6px 20px;
+}
+
+.formErrorText {
+
+    color: #d9534f;
+    font-size: 14px;
+}

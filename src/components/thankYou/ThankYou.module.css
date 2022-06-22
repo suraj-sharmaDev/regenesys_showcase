@@ -1,0 +1,100 @@
+.container {
+    height: 64vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    font-size: 44px;
+    color: #000;
+    display: block;
+    text-transform: uppercase;
+    font-weight: var(--font-bold);
+    text-align: center;
+}
+
+.container h3 {
+    font-size: 25px;
+    text-align: center;
+    width: 50%;   
+}
+
+@media (max-width: 767.98px) {
+    .container h3 {
+        font-size: 20px;
+        text-align: center;
+        width: 50%;   
+    }   
+}
+
+
+.bannerVideoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.videoPlayButton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.videoPlayButton:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #1fa393;
+    border-radius: 50%;
+    animation: pulseBorder 1500ms ease-out infinite;
+}
+
+.videoPlayButton:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #1fa393;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+
+.videoPlayButton:hover:after {
+    background-color: darken(#f4cd00, 10%);
+}
+
+.videoPlayButton span {
+    z-index: 3;
+    border-left: 16px solid #fff;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+@keyframes pulseBorder {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.bannerVideoDiv img {
+    max-width: 80px;
+}
+
+.bannerVideoDiv span {
+
+    color: #000;
+}
